@@ -1,13 +1,6 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+// Module Sass
+@import "./assets/styles/animations.styles.scss";
+@import "./assets/styles/base.styles.scss";
+@import "./assets/styles/mixins.styles.scss";
+@import "./assets/styles/typography.styles.scss";
+@import "./assets/styles/variables.styles.scss";

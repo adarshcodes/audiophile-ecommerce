@@ -1,16 +1,71 @@
 body {
-	font-family: "Poppins", sans-serif;
+	font-family: "Manrope", sans-serif;
+	font-weight: 500;
+	font-size: 1.5rem;
+	line-height: 2.5rem;
 }
 
-.heading-primary {
-	font-size: clamp(10rem, 12vw, 12vw);
-	font-weight: bold;
-	margin-bottom: 10vh;
-	margin-top: 10vh;
-	max-width: 70vw;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Manrope", sans-serif;
+	font-weight: 700;
 	text-transform: uppercase;
+}
 
-	font-family: "Anton", sans-serif;
-	line-height: 20rem;
-	color: #191817;
+h1 {
+	font-size: 5.6rem;
+	line-height: 5.8rem;
+	letter-spacing: .2rem;
+}
+
+h2 {
+	font-size: 4rem;
+	line-height: 4.4rem;
+	letter-spacing: .15rem;
+}
+
+h3 {
+	font-size: 3.2rem;
+	line-height: 3.6rem;
+	letter-spacing: .115rem;
+}
+
+h4 {
+	font-size: 2.8rem;
+	line-height: 3.8rem;
+	letter-spacing: .2rem;
+}
+
+h5 {
+	font-size: 2.4rem;
+	line-height: 3.3rem;
+	letter-spacing: .17rem;
+}
+
+h6 {
+	font-size: 1.8rem;
+	line-height: 2.4rem;
+	letter-spacing: .13rem;
+}
+
+.overline {
+	font-family: "Manrope", sans-serif;
+	font-weight: 400;
+	font-size: 1.4rem;
+	line-height: 1.9rem;
+	letter-spacing: 1rem;
+	text-transform: uppercase;
+}
+
+.subtitle {
+	font-family: "Manrope", sans-serif;
+	font-weight: 700;
+	font-size: 1.3rem;
+	line-height: 2.5rem;
+	letter-spacing: .1rem;
+	text-transform: uppercase;
 }
