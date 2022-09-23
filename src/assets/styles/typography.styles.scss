@@ -1,0 +1,16 @@
+body {
+	font-family: "Poppins", sans-serif;
+}
+
+.heading-primary {
+	font-size: clamp(10rem, 12vw, 12vw);
+	font-weight: bold;
+	margin-bottom: 10vh;
+	margin-top: 10vh;
+	max-width: 70vw;
+	text-transform: uppercase;
+
+	font-family: "Anton", sans-serif;
+	line-height: 20rem;
+	color: #191817;
+}
