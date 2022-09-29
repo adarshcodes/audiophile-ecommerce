@@ -7,6 +7,7 @@ import Headphones from "./routes/Headphones/Headphones";
 import Speakers from "./routes/Speakers/Speakers";
 import Earphones from "./routes/Earphones/Earphones";
 import Footer from "./parts/Footer/Footer";
+import ErrorPage from "./routes/ErrorPage/ErrorPage";
 
 function NavFooter() {
 	return (
@@ -27,6 +28,7 @@ function App() {
 					<Route path="speakers" element={<Speakers />} />
 					<Route path="earphones" element={<Earphones />} />
 				</Route>
+				<Route path="/*" element={<ErrorPage />} />
 			</Routes>
 		</div>
 	);
