@@ -1,0 +1,57 @@
+@import "../../index.scss";
+
+.navbar {
+    background-color: $color-primary-dark;
+    padding: 3.2rem 16.5rem 3.6rem 16.5rem;
+    position: relative;
+    width: 100%;
+    color: $color-secondary-light;
+    @include flex-row;
+    border-radius: 0 0 .8rem .8rem;
+
+    &::after {
+        content: "";
+        height: .1rem;
+        width: 78.6%;
+        background-color: #979797;
+        position: absolute;
+        bottom: 0;
+    }
+
+    &-logo {
+        width: 14.3rem;
+    }
+
+    &-list {
+        @include flex-row;
+        gap: 3.4rem;
+        font-weight: 700;
+        font-size: 1.3rem;
+        line-height: 2.5rem;
+        letter-spacing: .2rem;
+        text-transform: uppercase;
+        margin: 0 26.5% 0 16.3%;
+
+        &__items {
+            transition: all cubic-bezier(0.075, 0.82, 0.165, 1) .3s;
+
+            &:hover {
+                color: $color-primary-peru;
+            }
+        }
+    }
+
+    &-cart {
+        align-self: flex-end;
+        width: 23.33rem;
+        transition: all cubic-bezier(0.075, 0.82, 0.165, 1) .3s;
+
+        &:hover {
+            filter: invert(35%) sepia(34%) saturate(5421%) hue-rotate(328deg) brightness(92%) contrast(83%);
+        }
+    }
+}
+
+.transparent {
+    background-color: transparent;
+}

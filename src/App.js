@@ -1,14 +1,33 @@
+import React, { Fragment } from "react";
+import { Routes, Route } from "react-router-dom";
 import "./App.scss";
-import ButtonProductPeru from "./components/buttons/ButtonProductPeru";
-import ButtonProductOutline from "./components/buttons/ButtonProductOutline";
-import ButtonShop from "./components/buttons/ButtonShop";
+import NavBar from "./components/Navbar/NavBar";
+import Home from "./routes/Home/Home";
+import Headphones from "./routes/Headphones/Headphones";
+import Speakers from "./routes/Speakers/Speakers";
+import Earphones from "./routes/Earphones/Earphones";
+import Footer from "./parts/Footer/Footer";
+
+function NavFooter() {
+	return (
+		<Fragment>
+			<NavBar />
+			<Footer />
+		</Fragment>
+	);
+}
 
 function App() {
 	return (
 		<div className="App">
-			<ButtonProductPeru />
-			<ButtonProductOutline />
-			<ButtonShop />
+			<Routes>
+				<Route path="/" element={<NavFooter />}>
+					<Route index element={<Home />} />
+					<Route path="headphones" element={<Headphones />} />
+					<Route path="speakers" element={<Speakers />} />
+					<Route path="earphones" element={<Earphones />} />
+				</Route>
+			</Routes>
 		</div>
 	);
 }
