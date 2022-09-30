@@ -16,6 +16,13 @@
     justify-content: space-between;
 }
 
+@mixin flex-xy-space-between {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
 @mixin flex-xy-center {
     display: flex;
     flex-direction: row;
@@ -35,6 +42,11 @@
     flex-direction: row;
     justify-content: center;
     align-items: flex-end;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
 }
 
 @mixin flex-y-center {

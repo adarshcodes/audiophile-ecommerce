@@ -1,1 +1,51 @@
 @import "../../index.scss";
+
+.footer {
+    background-color: $color-primary-dark;
+    padding: 7.5rem 16.5rem 4.8rem 16.5rem;
+    position: relative;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    &::after {
+        content: "";
+        width: 10.1rem;
+        height: .4rem;
+        background-color: $color-primary-peru;
+        position: absolute;
+        top: 0;
+    }
+
+    &-navigation {
+        @include flex-x-space-between;
+
+        .navbar-list {
+            color: $color-secondary-light;
+            margin: 0;
+        }
+    }
+
+    &-copy {
+        @include flex-xy-space-between;
+        margin-top: 3.6rem;
+
+        .copy {
+            width: 45%;
+            color: $color-primary-light-1;
+            align-self: flex-start;
+            @include flex-column;
+            gap: 5.6rem;
+
+            .copyright {
+                font-weight: 700;
+            }
+        }
+
+        .socialicons {
+            @include flex-x-center;
+            gap: 1.6rem;
+        }
+    }
+}
