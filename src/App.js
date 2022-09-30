@@ -11,7 +11,7 @@ import ErrorPage from "./routes/ErrorPage/ErrorPage";
 
 function App() {
 	return (
-		<main className="App">
+		<main className="app">
 			<Routes>
 				<Route path="/" element={<Persistent />}>
 					<Route index element={<Home />} />
