@@ -1,0 +1,23 @@
+@import "../../index.scss";
+
+.products-card {
+    @include flex-row;
+    gap: 3rem;
+
+    .product-card {
+        width: 35rem;
+        height: 20.4rem;
+        background-color: $color-primary-light-1;
+        @include flex-yx-center;
+        position: relative;
+        padding-top: 11.6rem;
+        border-radius: .8rem;
+
+        &-img {
+            width: 20rem;
+            top: -30%;
+            position: absolute;
+            animation: float 5s ease-in-out infinite;
+        }
+    }
+}
