@@ -3,6 +3,7 @@ import React from "react";
 import "./productSummary.styles.scss";
 
 import ButtonProductPeru from "../Buttons/ButtonProductPeru";
+import ButtonProductOutline from "../Buttons/ButtonProductOutline";
 
 export default function ProductSummary(newProduct) {
 	return (
@@ -12,7 +13,11 @@ export default function ProductSummary(newProduct) {
 			) : null}
 			<h1 className="product-title">{newProduct.newProduct.name}</h1>
 			<p className="product-description">{newProduct.newProduct.description}</p>
-			<ButtonProductPeru />
+			{newProduct.newProduct.buttonPeru ? (
+				<ButtonProductPeru />
+			) : (
+				<ButtonProductOutline />
+			)}
 		</div>
 	);
 }

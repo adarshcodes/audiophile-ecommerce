@@ -1,7 +1,7 @@
 @import "../../index.scss";
 
 .products-card {
-    @include flex-row;
+    @include flex-x-space-between;
     gap: 3rem;
 
     .product-card {

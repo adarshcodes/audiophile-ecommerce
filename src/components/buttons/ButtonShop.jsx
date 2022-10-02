@@ -1,6 +1,6 @@
 import "./buttons.styles.scss";
 
-export default function ButtonProductPeru() {
+export default function ButtonShop() {
 	return (
 		<button className="btn btn-shop">
 			Shop <i className="fa-solid fa-angle-right"></i>

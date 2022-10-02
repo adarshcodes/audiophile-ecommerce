@@ -23,12 +23,25 @@
 }
 
 .btn-outline {
-    background-color: $color-secondary-light;
+    background-color: $color-secondary-dark;
+    color: $color-secondary-light;
+    border: 1px solid $color-secondary-dark;
+    transition: all .3s;
+
+    &:hover {
+        background-color: $color-secondary-light;
+        color: $color-secondary-dark;
+    }
+}
+
+.btn-outline-active {
+    background-color: transparent;
     color: $color-secondary-dark;
     border: 1px solid $color-secondary-dark;
     transition: all .3s;
 
     &:hover {
+
         background-color: $color-secondary-dark;
         color: $color-secondary-light;
     }

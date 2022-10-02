@@ -8,6 +8,7 @@ const newProduct = {
 	new: true,
 	description:
 		"Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.",
+	buttonPeru: true,
 };
 
 export default function Header() {
