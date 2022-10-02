@@ -44,7 +44,6 @@
     }
 
     &-cart {
-        align-self: flex-end;
         transition: all cubic-bezier(0.075, 0.82, 0.165, 1) .3s;
 
         &:hover {
@@ -55,4 +54,8 @@
 
 .transparent {
     background-color: transparent;
+}
+
+.active-link {
+    color: $color-primary-peru;
 }

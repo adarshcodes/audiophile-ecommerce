@@ -13,7 +13,9 @@ export default function Home() {
 				<title>Audiophile | Home</title>
 			</Helmet>
 			<Header />
-			<ProductsCard />
+			<section className="home-section">
+				<ProductsCard />
+			</section>
 		</Fragment>
 	);
 }

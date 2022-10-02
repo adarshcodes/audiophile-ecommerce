@@ -32,7 +32,7 @@ export default function ProductsCard() {
 		<div className="products-card">
 			{ProductCardList.map((product) => {
 				return (
-					<div className="product-card">
+					<div className="product-card" key={product.id}>
 						<img
 							src={product.img}
 							alt="ProductImg"
