@@ -2,7 +2,7 @@ import React from "react";
 
 import "./productsCard.styles.scss";
 
-import ButtonShop from "../Buttonss/ButtonShop";
+import ButtonShop from "../Buttons/ButtonShop";
 
 import HeadphoneImg from "../../assets/images/shared/desktop/image-headphones.png";
 import SpeakersImg from "../../assets/images/shared/desktop/image-speakers.png";

@@ -2,7 +2,7 @@ import React from "react";
 
 import "./productSummary.styles.scss";
 
-import ButtonProductPeru from "../Buttonss/ButtonProductPeru";
+import ButtonProductPeru from "../Buttons/ButtonProductPeru";
 import ButtonProductOutline from "../Buttons/ButtonProductOutline";
 
 export default function ProductSummary(newProduct) {

@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./zx7.styles.scss";
-import ButtonProductOutlineActive from "../Buttonss/ButtonProductOutlineActive";
+import ButtonProductOutlineActive from "../Buttons/ButtonProductOutlineActive";
 
 export default function Zx7() {
 	return (
