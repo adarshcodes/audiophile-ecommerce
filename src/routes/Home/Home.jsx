@@ -8,6 +8,7 @@ import ProductsCard from "../../components/ProductsCard/ProductsCard";
 import Zx9 from "../../components/Zx9/Zx9";
 import Zx7 from "../../components/Zx7/Zx7";
 import Yx1 from "../../components/Yx1/Yx1";
+import BestAudio from "../../components/BestAudio/BestAudio";
 
 export default function Home() {
 	return (
@@ -21,6 +22,7 @@ export default function Home() {
 				<Zx9 />
 				<Zx7 />
 				<Yx1 />
+				<BestAudio />
 			</section>
 		</Fragment>
 	);
