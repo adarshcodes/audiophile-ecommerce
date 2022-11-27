@@ -1,19 +1,23 @@
 @import "../../index.scss";
 
-.navbar {
+.navigation {
     background-color: $color-primary-dark;
-    padding: 3.2rem 16.5rem 3.6rem 16.5rem;
+    padding: 3.2rem 16.5rem 0rem 16.5rem;
+    color: $color-secondary-light;
+}
+
+.navbar {
+    padding-bottom: 3.6rem;
     position: relative;
     width: 100%;
-    color: $color-secondary-light;
-    @include flex-row;
+    @include flex-x-space-between;
     border-radius: 0 0 .8rem .8rem;
     z-index: 5;
 
     &::after {
         content: "";
         height: .1rem;
-        width: 78.6%;
+        width: 100%;
         background-color: #979797;
         position: absolute;
         bottom: 0;
@@ -31,7 +35,6 @@
         line-height: 2.5rem;
         letter-spacing: .2rem;
         text-transform: uppercase;
-        margin: 0 26.5% 0 16.3%;
 
         &__items {
             transition: all cubic-bezier(0.075, 0.82, 0.165, 1) .3s;

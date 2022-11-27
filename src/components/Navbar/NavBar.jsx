@@ -17,49 +17,51 @@ export default function NavBar() {
 
 	return (
 		<Fragment>
-			<nav className={`navbar ${isActiveHome ? " transparent" : null}`}>
-				<Link to="/">
-					<Logo className="navbar-logo" />
-				</Link>
+			<div className="navigation">
+				<nav className={`navbar ${isActiveHome ? " transparent" : null}`}>
+					<Link to="/">
+						<Logo className="navbar-logo" />
+					</Link>
 
-				<ul className="navbar-list">
-					<li
-						className={`navbar-list__items ${
-							isActiveHome ? "active-link" : null
-						}`}
-					>
-						<Link to="/">Home</Link>
-					</li>
+					<ul className="navbar-list">
+						<li
+							className={`navbar-list__items ${
+								isActiveHome ? "active-link" : null
+							}`}
+						>
+							<Link to="/">Home</Link>
+						</li>
 
-					<li
-						className={`navbar-list__items ${
-							isActiveHeadphones ? "active-link" : null
-						}`}
-					>
-						<Link to="/headphones">Headphones</Link>
-					</li>
+						<li
+							className={`navbar-list__items ${
+								isActiveHeadphones ? "active-link" : null
+							}`}
+						>
+							<Link to="/headphones">Headphones</Link>
+						</li>
 
-					<li
-						className={`navbar-list__items ${
-							isActiveSpeakers ? "active-link" : null
-						}`}
-					>
-						<Link to="/speakers">Speakers</Link>
-					</li>
+						<li
+							className={`navbar-list__items ${
+								isActiveSpeakers ? "active-link" : null
+							}`}
+						>
+							<Link to="/speakers">Speakers</Link>
+						</li>
 
-					<li
-						className={`navbar-list__items ${
-							isActiveEarphones ? "active-link" : null
-						}`}
-					>
-						<Link to="/earphones">Earphones</Link>
-					</li>
-				</ul>
+						<li
+							className={`navbar-list__items ${
+								isActiveEarphones ? "active-link" : null
+							}`}
+						>
+							<Link to="/earphones">Earphones</Link>
+						</li>
+					</ul>
 
-				<Link to="/">
-					<Cart className="navbar-cart" />
-				</Link>
-			</nav>
+					<Link to="/">
+						<Cart className="navbar-cart" />
+					</Link>
+				</nav>
+			</div>
 
 			<Outlet />
 		</Fragment>
