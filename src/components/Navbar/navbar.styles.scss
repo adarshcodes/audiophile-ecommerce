@@ -4,6 +4,10 @@
     background-color: $color-primary-dark;
     padding: 3.2rem 16.5rem 0rem 16.5rem;
     color: $color-secondary-light;
+
+    @media screen and (max-width: 1000px) {
+        padding: 3.2rem 3.95rem 0rem 3.95rem;
+    }
 }
 
 .navbar {
@@ -44,6 +48,10 @@
                 color: $color-primary-peru;
             }
         }
+
+        @media screen and (max-width: 1000px) {
+            display: none;
+        }
     }
 
     &-cart {
@@ -61,4 +69,34 @@
 
 .active-link {
     color: $color-primary-peru;
+}
+
+.nav-tab-mob {
+    z-index: 100;
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    padding: 11.8rem 3.95rem 6.7rem 3.95rem;
+    transform: translate(-50%, -100%);
+    border-radius: 0 0 .8rem .8rem;
+    background-color: $color-secondary-light;
+    transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.toggle-nav {
+    transform: translate(-50%, 25%);
+}
+
+.ham {
+    cursor: pointer;
+    display: none;
+
+    @media screen and (max-width: 1000px) {
+        display: block;
+    }
+}
+
+.logo {
+    display: flex;
+    gap: 4.2rem;
 }

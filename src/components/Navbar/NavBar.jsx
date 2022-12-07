@@ -6,7 +6,9 @@ import { ReactComponent as Logo } from "../../assets/images/shared/desktop/logo.
 
 import { ReactComponent as Cart } from "../../assets/images/shared/desktop/icon-cart.svg";
 
-export default function NavBar() {
+import { ReactComponent as Ham } from "../../assets/images/shared/tablet/icon-hamburger.svg";
+
+export default function NavBar({ nav, setNav }) {
 	const location = useLocation();
 
 	const isActiveHome =
@@ -14,16 +16,27 @@ export default function NavBar() {
 	const isActiveHeadphones = location.pathname === "/headphones";
 	const isActiveSpeakers = location.pathname === "/speakers";
 	const isActiveEarphones = location.pathname === "/earphones";
+	console.log(nav);
+
+	const toggleNav = () => {
+		setNav(!nav);
+	};
 
 	return (
 		<Fragment>
 			<div className="navigation">
 				<nav className={`navbar ${isActiveHome ? " transparent" : null}`}>
-					<Link to="/">
-						<Logo className="navbar-logo" />
-					</Link>
+					<div className="logo">
+						<div className="ham" onClick={toggleNav}>
+							<Ham />
+						</div>
 
-					<ul className="navbar-list">
+						<Link to="/">
+							<Logo className="navbar-logo" />
+						</Link>
+					</div>
+
+					<ul className="navbar-list navbar-desktop">
 						<li
 							className={`navbar-list__items ${
 								isActiveHome ? "active-link" : null
