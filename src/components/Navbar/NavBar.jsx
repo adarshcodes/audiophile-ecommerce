@@ -24,8 +24,8 @@ export default function NavBar({ nav, setNav }) {
 
 	return (
 		<Fragment>
-			<div className="navigation">
-				<nav className={`navbar ${isActiveHome ? " transparent" : null}`}>
+			<div className={`navigation ${isActiveHome ? "transparent" : null}`}>
+				<nav className="navbar">
 					<div className="logo">
 						<div className="ham" onClick={toggleNav}>
 							<Ham />
