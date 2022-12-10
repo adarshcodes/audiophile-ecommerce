@@ -81,6 +81,10 @@
 
 .transparent {
     background-color: transparent !important;
+
+    @media screen and (max-width: 650px) {
+        background-color: $color-primary-dark !important;
+    }
 }
 
 .active-link {

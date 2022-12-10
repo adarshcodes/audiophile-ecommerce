@@ -7,10 +7,9 @@
     transform: translateY(-14%);
     z-index: -1;
     border-radius: 0 0 1rem 1rem;
-    background-image: url("../../assets/images/home/desktop/image-hero.jpg");
+    background-image: url("../../assets/images/home/desktop/Bitmap.png");
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-position: 88%;
 
     @media screen and (max-width: 650px) {
         transform: translateY(-1rem);
