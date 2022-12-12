@@ -10,6 +10,10 @@
     border: none;
     cursor: pointer;
     color: $color-secondary-light;
+
+    @media screen and (max-width: 650px) {
+        padding: 1.5rem 3rem;
+    }
 }
 
 .btn-peru {
