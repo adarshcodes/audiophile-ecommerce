@@ -9,9 +9,24 @@
     border-radius: .8rem;
     margin-bottom: 4.8rem;
 
+    @media screen and (max-width: 1000px) {
+        background-image: url("../../assets/images/home/tablet/image-speaker-zx7.jpg");
+    }
+
+    @media screen and (max-width: 650px) {
+        background-image: url("../../assets/images/home/mobile/image-speaker-zx7.jpg");
+        height: auto;
+        padding: 10.1rem 0rem 10.1rem 2.4rem;
+        background-position: center;
+    }
+
     &-copy {
         transform: translate(9.5rem, 10.1rem);
         display: inline-block;
+
+        @media screen and (max-width: 650px) {
+            transform: translate(0, 0);
+        }
 
         &-heading {
             margin-bottom: 2.4rem;

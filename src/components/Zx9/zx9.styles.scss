@@ -14,8 +14,27 @@
     background-repeat: no-repeat;
     background-position: -15rem -5rem;
 
+    @media screen and (max-width: 1350px) {
+        justify-content: space-around;
+        padding: 9rem 0 0 0;
+        gap: 3rem;
+    }
+
     @media screen and (max-width: 1000px) {
         margin-top: 9.6rem !important;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 5.2rem 0 6.4rem 0;
+        height: auto;
+        background-position: center -32rem;
+    }
+
+    @media screen and (max-width: 650px) {
+        padding: 5.5rem 2.35rem;
+        background-size: cover;
+        background-position: center -17rem;
+        margin-top: 12rem;
     }
 
 
@@ -23,10 +42,22 @@
         width: 40rem;
         animation: float 3s ease-in-out infinite;
         animation-delay: 5s;
+
+        @media screen and (max-width: 1000px) {
+            width: 19.7rem;
+        }
+
+        @media screen and (max-width: 650px) {
+            width: 17.225rem;
+        }
     }
 
     .product-copy {
         width: 34.9rem;
         margin-top: 2rem;
+
+        @media screen and (max-width: 650px) {
+            width: auto !important;
+        }
     }
 }
