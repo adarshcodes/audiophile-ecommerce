@@ -9,7 +9,7 @@ export default function Yx1() {
 			<div className="yx1-card yx1-card-1"></div>
 			<div className="yx1-card yx1-card-2">
 				<div className="yx1-copy">
-					<h4 className="yx1-copy-heading">ZX7 SPEAKER</h4>
+					<h4 className="yx1-copy-heading">YX1 SPEAKER</h4>
 					<ButtonProductOutlineActive />
 				</div>
 			</div>
