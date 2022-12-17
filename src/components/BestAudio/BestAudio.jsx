@@ -3,6 +3,8 @@ import React from "react";
 import "./bestAudio.styles.scss";
 
 import BestAudioImg from "../../assets/images/shared/desktop/image-best-gear.jpg";
+import BestAudioTab from "../../assets/images/shared/tablet/image-best-gear.jpg";
+import BestAudioMob from "../../assets/images/shared/mobile/image-best-gear.jpg";
 
 export default function BestAudio() {
 	return (
@@ -22,7 +24,11 @@ export default function BestAudio() {
 			</div>
 
 			<div className="best-audio-img">
-				<img src={BestAudioImg} alt="best-audio" />
+				<picture>
+					<source media="(max-width: 650px)" srcset={BestAudioMob}></source>
+					<source media="(max-width: 1000px)" srcset={BestAudioTab}></source>
+					<img src={BestAudioImg} alt="best-audio" />
+				</picture>
 			</div>
 		</div>
 	);
