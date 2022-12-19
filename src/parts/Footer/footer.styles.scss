@@ -5,6 +5,14 @@
     padding: 7.5rem 16.5rem 4.8rem 16.5rem;
     position: relative;
 
+    @media screen and (max-width: 1000px) {
+        padding: 6rem 3.95rem 4.6rem 3.95rem;
+    }
+
+    @media screen and (max-width: 650px) {
+        text-align: center;
+    }
+
     &::after {
         content: "";
         width: 10.1rem;
@@ -12,6 +20,10 @@
         background-color: $color-primary-peru;
         position: absolute;
         top: 0;
+
+        @media screen and (max-width: 650px) {
+            transform: translateX(-50%);
+        }
     }
 
     &-navigation {
@@ -21,11 +33,25 @@
             color: $color-secondary-light;
             margin: 0;
         }
+
+        @media screen and (max-width: 1000px) {
+            flex-direction: column;
+            gap: 3.2rem;
+        }
+
+        @media screen and (max-width: 650px) {
+            align-items: center;
+        }
     }
 
     &-copy {
         @include flex-xy-space-between;
         margin-top: 3.6rem;
+
+        @media screen and (max-width: 1000px) {
+            flex-direction: column;
+            position: relative;
+        }
 
         .copy {
             width: 45%;
@@ -33,6 +59,10 @@
             align-self: flex-start;
             @include flex-column;
             gap: 5.6rem;
+
+            @media screen and (max-width: 1000px) {
+                width: 100%;
+            }
 
             .copyright {
                 font-weight: 700;
@@ -42,6 +72,17 @@
         .socialicons {
             @include flex-x-center;
             gap: 1.6rem;
+
+            @media screen and (max-width: 1000px) {
+                position: absolute;
+                bottom: -.8rem;
+                right: 0;
+            }
+
+            @media screen and (max-width: 650px) {
+                position: initial;
+                margin-top: 5.25rem;
+            }
         }
     }
 }

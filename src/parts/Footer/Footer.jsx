@@ -24,7 +24,7 @@ function Footer() {
 					<Logo className="logo" />
 				</Link>
 
-				<ul className="navbar-list">
+				<ul className="navbar-list navbar-footer-list">
 					<li
 						className={`navbar-list__items ${
 							isActiveHome ? "active-link" : null
