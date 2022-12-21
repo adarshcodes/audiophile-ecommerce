@@ -87,6 +87,10 @@
     }
 }
 
+.dark {
+    background-color: $color-secondary-dark !important;
+}
+
 .active-link {
     color: $color-primary-peru;
 }
