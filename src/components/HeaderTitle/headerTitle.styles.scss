@@ -1,0 +1,10 @@
+@import "../../index.scss";
+
+.header-title {
+    @include flex-xy-center;
+    padding: 9.75rem 0;
+    background-color: $color-secondary-dark;
+    border-radius: 0 0 .8rem .8rem;
+    color: $color-secondary-light;
+    transform: translateY(-.8rem);
+}
