@@ -7,7 +7,11 @@ import ButtonProductOutline from "../Buttons/ButtonProductOutline";
 
 export default function ProductSummary(newProduct) {
 	return (
-		<div className="product-copy">
+		<div
+			className={`product-copy ${
+				newProduct.newProduct.colorDark ? "color-dark" : null
+			}`}
+		>
 			{newProduct.newProduct.new ? (
 				<p className="new-product">New Product</p>
 			) : null}

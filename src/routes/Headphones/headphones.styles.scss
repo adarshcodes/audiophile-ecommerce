@@ -1,3 +1,55 @@
 @import "../../index.scss";
 
-.headphones-container {}
+.headphones-container {
+    .headphones {
+        padding: 16rem 16.5rem;
+
+        @media screen and (max-width: 1000px) {
+            padding: 12rem 3.95rem;
+        }
+
+        @media screen and (max-width: 650px) {
+            padding: 6.4rem 2.4rem 12rem 2.4rem;
+        }
+    }
+
+    .headphone {
+        &:nth-child(odd) {
+            flex-direction: row;
+        }
+
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        @include flex-row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 16rem;
+        gap: 12.5rem;
+
+        @media screen and (max-width: 1200px) {
+            gap: 3rem;
+        }
+
+        @media screen and (max-width: 1000px) {
+            flex-direction: column !important;
+            gap: 5.2rem;
+        }
+
+        .headphone-display {
+            width: 54rem;
+
+            @media screen and (max-width: 1000px) {
+                width: 100%;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: .8rem;
+            }
+        }
+    }
+}
