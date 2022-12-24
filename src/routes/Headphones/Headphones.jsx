@@ -4,6 +4,8 @@ import { useLocation } from "react-router-dom";
 import "./headphones.styles.scss";
 import ProductSummary from "../../components/ProductsSummary/ProductSummary";
 import HeaderTitle from "../../components/HeaderTitle/HeaderTitle";
+import ProductsCard from "../../components/ProductsCard/ProductsCard";
+
 import Headphone1 from "../../assets/images/category-headphones/desktop/image-xx99-mark-two.jpg";
 import Headphone1Tab from "../../assets/images/category-headphones/tablet/image-xx99-mark-two.jpg";
 import Headphone1Mob from "../../assets/images/category-headphones/mobile/image-xx99-mark-two.jpg";
@@ -48,7 +50,6 @@ export default function Headphones() {
 	return (
 		<div className="headphones-container">
 			<HeaderTitle currPage={currPage} />
-
 			<div className="headphones">
 				<div className="headphone">
 					<div className="headphone-display">
@@ -103,6 +104,8 @@ export default function Headphones() {
 
 					<ProductSummary newProduct={newProduct.product3} />
 				</div>
+
+				<ProductsCard />
 			</div>
 		</div>
 	);

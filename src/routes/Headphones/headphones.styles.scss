@@ -11,6 +11,18 @@
         @media screen and (max-width: 650px) {
             padding: 6.4rem 2.4rem 12rem 2.4rem;
         }
+
+        .products-card {
+            margin-top: 23.3rem;
+
+            @media screen and (max-width: 1000px) {
+                margin-top: 17rem;
+            }
+
+            @media screen and (max-width: 650px) {
+                margin-top: 14rem;
+            }
+        }
     }
 
     .headphone {
