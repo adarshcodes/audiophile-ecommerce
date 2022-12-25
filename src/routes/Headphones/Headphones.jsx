@@ -5,6 +5,7 @@ import "./headphones.styles.scss";
 import ProductSummary from "../../components/ProductsSummary/ProductSummary";
 import HeaderTitle from "../../components/HeaderTitle/HeaderTitle";
 import ProductsCard from "../../components/ProductsCard/ProductsCard";
+import BestAudio from "../../components/BestAudio/BestAudio";
 
 import Headphone1 from "../../assets/images/category-headphones/desktop/image-xx99-mark-two.jpg";
 import Headphone1Tab from "../../assets/images/category-headphones/tablet/image-xx99-mark-two.jpg";
@@ -106,6 +107,7 @@ export default function Headphones() {
 				</div>
 
 				<ProductsCard />
+				<BestAudio />
 			</div>
 		</div>
 	);
