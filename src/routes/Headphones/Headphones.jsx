@@ -1,5 +1,4 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
 
 import "./headphones.styles.scss";
 import ProductSummary from "../../components/ProductsSummary/ProductSummary";
@@ -57,11 +56,11 @@ export default function Headphones() {
 						<picture>
 							<source
 								media="(max-width: 650px)"
-								srcset={Headphone1Mob}
+								srcSet={Headphone1Mob}
 							></source>
 							<source
 								media="(max-width: 1000px)"
-								srcset={Headphone1Tab}
+								srcSet={Headphone1Tab}
 							></source>
 							<img src={Headphone1} alt="product-img" />
 						</picture>
@@ -75,11 +74,11 @@ export default function Headphones() {
 						<picture>
 							<source
 								media="(max-width: 650px)"
-								srcset={Headphone2Mob}
+								srcSet={Headphone2Mob}
 							></source>
 							<source
 								media="(max-width: 1000px)"
-								srcset={Headphone2Tab}
+								srcSet={Headphone2Tab}
 							></source>
 							<img src={Headphone2} alt="product-img" />
 						</picture>
@@ -93,11 +92,11 @@ export default function Headphones() {
 						<picture>
 							<source
 								media="(max-width: 650px)"
-								srcset={Headphone3Mob}
+								srcSet={Headphone3Mob}
 							></source>
 							<source
 								media="(max-width: 1000px)"
-								srcset={Headphone3Tab}
+								srcSet={Headphone3Tab}
 							></source>
 							<img src={Headphone3} alt="product-img" />
 						</picture>
